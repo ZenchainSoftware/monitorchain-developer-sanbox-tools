@@ -1,0 +1,467 @@
+{
+    "abi": [
+        {
+            "constant": true,
+            "inputs": [],
+            "name": "getAllSupportedTokens",
+            "outputs": [
+                {
+                    "name": "allTokens",
+                    "type": "address[]"
+                }
+            ],
+            "payable": false,
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "constant": true,
+            "inputs": [],
+            "name": "priceForAllPerDay",
+            "outputs": [
+                {
+                    "name": "priceForAllPerDay",
+                    "type": "uint8"
+                }
+            ],
+            "payable": false,
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "constant": true,
+            "inputs": [],
+            "name": "remainingSubscriptionDays",
+            "outputs": [
+                {
+                    "name": "remainingDays",
+                    "type": "uint256"
+                }
+            ],
+            "payable": false,
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "constant": true,
+            "inputs": [],
+            "name": "pricePerTokenPerDay",
+            "outputs": [
+                {
+                    "name": "pricePerTokenPerDay",
+                    "type": "uint8"
+                }
+            ],
+            "payable": false,
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "constant": false,
+            "inputs": [
+                {
+                    "name": "tokenAddress",
+                    "type": "address"
+                }
+            ],
+            "name": "addSupportedToken",
+            "outputs": [],
+            "payable": false,
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "constant": false,
+            "inputs": [
+                {
+                    "name": "tokenAddress",
+                    "type": "address"
+                }
+            ],
+            "name": "removeSupportedToken",
+            "outputs": [],
+            "payable": false,
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "constant": true,
+            "inputs": [
+                {
+                    "name": "token",
+                    "type": "address"
+                }
+            ],
+            "name": "canAccessToken",
+            "outputs": [
+                {
+                    "name": "canAccess",
+                    "type": "bool"
+                }
+            ],
+            "payable": false,
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "constant": true,
+            "inputs": [],
+            "name": "subscriptionIsValid",
+            "outputs": [
+                {
+                    "name": "isValid",
+                    "type": "bool"
+                }
+            ],
+            "payable": false,
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "constant": true,
+            "inputs": [],
+            "name": "isExistingSubscriber",
+            "outputs": [
+                {
+                    "name": "isSubscriber",
+                    "type": "bool"
+                }
+            ],
+            "payable": false,
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "constant": true,
+            "inputs": [
+                {
+                    "name": "token",
+                    "type": "address"
+                }
+            ],
+            "name": "isSubscribedToToken",
+            "outputs": [
+                {
+                    "name": "isSubscribed",
+                    "type": "bool"
+                }
+            ],
+            "payable": false,
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "constant": true,
+            "inputs": [
+                {
+                    "name": "tokenAddress",
+                    "type": "address"
+                },
+                {
+                    "name": "statusNumber",
+                    "type": "uint16"
+                }
+            ],
+            "name": "getStatusDetails",
+            "outputs": [
+                {
+                    "name": "",
+                    "type": "uint8"
+                },
+                {
+                    "name": "",
+                    "type": "string"
+                },
+                {
+                    "name": "",
+                    "type": "address"
+                },
+                {
+                    "name": "",
+                    "type": "uint256"
+                },
+                {
+                    "name": "",
+                    "type": "bool"
+                }
+            ],
+            "payable": false,
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "constant": true,
+            "inputs": [
+                {
+                    "name": "tokenAddress",
+                    "type": "address"
+                }
+            ],
+            "name": "getCurrentStatusDetails",
+            "outputs": [
+                {
+                    "name": "",
+                    "type": "uint8"
+                },
+                {
+                    "name": "",
+                    "type": "string"
+                },
+                {
+                    "name": "",
+                    "type": "address"
+                },
+                {
+                    "name": "",
+                    "type": "uint256"
+                }
+            ],
+            "payable": false,
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "constant": true,
+            "inputs": [],
+            "name": "getNumberSupportedTokens",
+            "outputs": [
+                {
+                    "name": "numberOfTokens",
+                    "type": "uint256"
+                }
+            ],
+            "payable": false,
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "constant": false,
+            "inputs": [
+                {
+                    "name": "subscribee",
+                    "type": "address"
+                },
+                {
+                    "name": "numberOfDays",
+                    "type": "uint256"
+                }
+            ],
+            "name": "subscribeAll",
+            "outputs": [],
+            "payable": true,
+            "stateMutability": "payable",
+            "type": "function"
+        },
+        {
+            "constant": true,
+            "inputs": [
+                {
+                    "name": "numberOfDays",
+                    "type": "uint256"
+                },
+                {
+                    "name": "numberTokens",
+                    "type": "uint256"
+                }
+            ],
+            "name": "calculatePrice",
+            "outputs": [
+                {
+                    "name": "",
+                    "type": "uint256"
+                },
+                {
+                    "name": "",
+                    "type": "uint256"
+                },
+                {
+                    "name": "",
+                    "type": "uint256"
+                }
+            ],
+            "payable": false,
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "constant": true,
+            "inputs": [
+                {
+                    "name": "tokenAddress",
+                    "type": "address"
+                }
+            ],
+            "name": "getStatusLevel",
+            "outputs": [
+                {
+                    "name": "errorLevel",
+                    "type": "uint8"
+                }
+            ],
+            "payable": false,
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "constant": true,
+            "inputs": [
+                {
+                    "name": "eventId",
+                    "type": "uint16"
+                }
+            ],
+            "name": "getTokenForEventId",
+            "outputs": [
+                {
+                    "name": "tokenAddress",
+                    "type": "address"
+                }
+            ],
+            "payable": false,
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "constant": true,
+            "inputs": [],
+            "name": "getSubscriptionData",
+            "outputs": [
+                {
+                    "name": "",
+                    "type": "uint256"
+                },
+                {
+                    "name": "",
+                    "type": "uint256"
+                },
+                {
+                    "name": "",
+                    "type": "uint256"
+                },
+                {
+                    "name": "",
+                    "type": "uint256"
+                },
+                {
+                    "name": "",
+                    "type": "address"
+                }
+            ],
+            "payable": false,
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "constant": true,
+            "inputs": [
+                {
+                    "name": "tokenAddress",
+                    "type": "address"
+                }
+            ],
+            "name": "getLastStatusDetails",
+            "outputs": [
+                {
+                    "name": "",
+                    "type": "uint8"
+                },
+                {
+                    "name": "",
+                    "type": "string"
+                },
+                {
+                    "name": "",
+                    "type": "address"
+                },
+                {
+                    "name": "",
+                    "type": "uint256"
+                },
+                {
+                    "name": "",
+                    "type": "bool"
+                }
+            ],
+            "payable": false,
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "constant": false,
+            "inputs": [
+                {
+                    "name": "subscribee",
+                    "type": "address"
+                },
+                {
+                    "name": "numberOfDays",
+                    "type": "uint256"
+                },
+                {
+                    "name": "tokenAddresses",
+                    "type": "address[]"
+                }
+            ],
+            "name": "subscribe",
+            "outputs": [],
+            "payable": true,
+            "stateMutability": "payable",
+            "type": "function"
+        },
+        {
+            "constant": true,
+            "inputs": [
+                {
+                    "name": "tokenAddress",
+                    "type": "address"
+                }
+            ],
+            "name": "getTotalStatusCounts",
+            "outputs": [
+                {
+                    "name": "errorsCount",
+                    "type": "uint16"
+                }
+            ],
+            "payable": false,
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "constant": true,
+            "inputs": [],
+            "name": "minDays",
+            "outputs": [
+                {
+                    "name": "minDays",
+                    "type": "uint8"
+                }
+            ],
+            "payable": false,
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "constant": false,
+            "inputs": [],
+            "name": "unsubscribe",
+            "outputs": [],
+            "payable": false,
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": false,
+                    "name": "eventId",
+                    "type": "uint16"
+                }
+            ],
+            "name": "TokenStatusChanged",
+            "type": "event"
+        }
+    ],
+    "bytecode": "0x"
+}

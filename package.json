@@ -1,0 +1,34 @@
+{
+  "name": "mcn-sanbox",
+  "version": "0.0.1",
+  "description": "The MonitorChain/Zendex sandbox scripts",
+  "main": "reset.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZenchainSoftware/monitorchain-developer-sanbox-tools.git"
+  },
+  "keywords": [
+    "monitorchain",
+    "monitor",
+    "block explorer",
+    "solidity",
+    "ethereum",
+    "smart contract security",
+    "blockchain security"
+  ],
+  "author": "Alexandr V.Mekh",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ZenchainSoftware/monitorchain-sanbox/issues"
+  },
+  "homepage": "https://github.com/ZenchainSoftware/monitorchain-developer-sanbox-tools#readme",
+  "dependencies": {
+    "big-integer": "^1.6.35",
+    "config": "^2.0.1",
+    "truffle-hdwallet-provider": "0.0.6",
+    "web3": "^1.0.0-beta.36"
+  }
+}
