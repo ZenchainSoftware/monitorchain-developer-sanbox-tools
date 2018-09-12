@@ -128,4 +128,5 @@ const init = async () => {
     console.log('INIT DONE')
 };
 
-reset().then(init).then(process.exit);
+// reset().then(init).then(process.exit);
+monitor.w3.eth.net.getId().then(console.log);

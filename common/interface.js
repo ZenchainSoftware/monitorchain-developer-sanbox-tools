@@ -692,6 +692,16 @@ class MonitorChain extends ContractFactory {
         return returnValue(err, result, callback);
     }
 
+
+    async isAddressBlocked(token, addressToCheck, callback) {
+        await this.init();
+        const [err, result] = await _to(this.contract.methods.isAddressBlocked(
+            toChecksum(token),
+            toChecksum(addressToCheck))
+            .call({from: this.wallet}));
+        return returnValue(err, result, callback);
+    }
+
     onStatusChanged(callback) {
         if (!['ws', 'wss'].includes(this.protocol))
             throw `Invalid protocol type - '${this.protocol}'! ` +

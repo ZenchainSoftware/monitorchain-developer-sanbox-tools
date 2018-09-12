@@ -1,7 +1,7 @@
 {
   "name": "mcn-sanbox",
   "version": "0.0.1",
-  "description": "The MonitorChain/Zendex sandbox scripts",
+  "description": "MonitorChain Developer Sandbox tools",
   "main": "reset.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -20,11 +20,11 @@
     "blockchain security"
   ],
   "author": "Alexandr V.Mekh",
-  "license": "MIT",
+  "license": "GPL-2.0",
   "bugs": {
-    "url": "https://github.com/ZenchainSoftware/monitorchain-sanbox/issues"
+    "url": "https://github.com/ZenchainSoftware/monitorchain-developer-sanbox-tools/issues"
   },
-  "homepage": "https://github.com/ZenchainSoftware/monitorchain-developer-sanbox-tools#readme",
+  "homepage": "https://monitorchain.com",
   "dependencies": {
     "big-integer": "^1.6.35",
     "config": "^2.0.1",

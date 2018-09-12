@@ -451,6 +451,29 @@
             "type": "function"
         },
         {
+            "constant": true,
+            "inputs": [
+                {
+                    "name": "token",
+                    "type": "address"
+                },
+                {
+                    "name": "addressToCheck",
+                    "type": "address"
+                }
+            ],
+            "name": "isAddressBlocked",
+            "outputs": [
+                {
+                    "name": "",
+                    "type": "bool"
+                }
+            ],
+            "payable": false,
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
             "anonymous": false,
             "inputs": [
                 {
